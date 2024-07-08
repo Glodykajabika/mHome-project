@@ -1,0 +1,110 @@
+.nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    height: 6.5rem;
+
+    &__logo {
+        color: $color-primary;
+        text-align: center;
+        font-family: $font-family-2;
+        font-size: 1.7rem;
+        cursor: pointer;
+
+        &-img {
+            padding-bottom: 0.3rem;
+
+            &--white {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        font-family: $font-family-2;
+
+        &-icon {
+            width: 3rem;
+            height: 3rem;
+            margin: 0.5rem;
+            // filter: invert(81%) sepia(27%) saturate(3482%) hue-rotate(86deg) brightness(103%) contrast(100%);
+            transition: all 0.2s;
+
+            &-4 {
+                display: none;
+            }
+
+            &:hover {
+                transform: scale(0.9);
+                filter: invert(0%) sepia(31%) saturate(2099%) hue-rotate(130deg)
+                    brightness(102%) contrast(115%);
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        justify-content: space-around;
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        padding-right: 10rem;
+        margin-left: auto;
+        transition: all 0.3s;
+    }
+
+    &__item {
+        text-align: center;
+
+        .nav__link--special {
+            color: $color-white;
+            border-color: $color-white;
+
+            &:hover {
+                color: $color-primary;
+                border-color: $color-white;
+            }
+        }
+    }
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $color-primary;
+        z-index: 1000;
+        transition: all 0.4s linear;
+        box-shadow: 0 1rem 1rem rgba($color: $color-black, $alpha: .3);
+
+        & .nav {
+            &__logo {
+                color: $color-white;
+
+                &-img {
+                    &--blue {
+                        display: none;
+                    }
+
+                    &--white {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            &__link {
+                color: $color-white;
+                border-color: $color-white;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

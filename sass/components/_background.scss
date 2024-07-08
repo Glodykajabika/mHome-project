@@ -1,0 +1,26 @@
+
+.background-image {
+
+    &--oval {
+        background-image: url("../../icons/oval.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: -10;
+    }
+
+    &--shuriken {
+        background-image: url(../../icons/shuriken.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        z-index: -10;
+    }
+
+    &--triangle {
+        background-image: url(../../icons/triangle.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        z-index: -11;
+    }
+}

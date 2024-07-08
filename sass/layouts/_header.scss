@@ -1,0 +1,83 @@
+
+.header {
+    // height: 86vh;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1150px;
+
+    & .background-image--oval {
+        position: absolute;
+        top: -25.7rem;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    & .background-image--shuriken {
+        position: absolute;
+        top: 10rem;
+        right: 20rem;
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    & .background-image--triangle {
+        position: absolute;
+        top: 15rem;
+        right: 0;
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .provided-services {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+        grid-row-gap: 6rem;
+        max-width: 100rem;
+        margin: 10rem auto 0 auto;
+
+        .row-2 {
+            display: grid;
+            grid-column: 2 / span 3;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5rem;
+        }
+
+        .services-icon {
+            position: relative;
+            text-align: center;
+
+            .service-icon {
+                width: 3.2rem;
+                height: 3.2rem;
+
+            }
+
+            .hover-effect {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 4rem;
+                opacity: 0;
+                transition: all .4s;
+            }
+
+            &:hover .hover-effect {
+                opacity: 1;
+            }
+
+            .service-text {
+                font-family: $font-family-3;
+                font-weight: 600;
+            }
+
+            &:hover .service-text {
+                color: $color-secondary-light-2;
+            }
+        }
+    }
+}

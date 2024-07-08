@@ -1,0 +1,60 @@
+body {
+    font-family: $font-family-1;
+    letter-spacing: 0.1rem;
+}
+
+.heading-primary {
+    color: $color-primary;
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin: 10rem auto 5rem auto;
+    text-align: center;
+    line-height: 6.05rem;
+    max-width: 81.4rem;
+
+    &--main {
+        display: block;
+    }
+
+    &--sub {
+        display: block;
+        font-weight: 900;
+    }
+    
+}
+
+.heading-secondary {
+    color: $color-primary;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 7rem 5rem;
+}
+
+.heading-tertiary {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: $default-font-size;
+    text-transform: capitalize;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+}
+
+ul {
+    list-style: none;
+    color: $color-white;
+}
+
+li {
+    padding: 1rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

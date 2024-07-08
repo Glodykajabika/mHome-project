@@ -1,0 +1,124 @@
+.grid--3-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: $grid-width;
+    gap: 3rem;
+    padding: 0 5rem;
+    margin-bottom: 6rem;
+
+    .img {
+        display: flex;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 2rem;
+        height: 100%;
+
+        &--mid-size {
+            height: 30rem;
+        }
+
+        &--salon {
+            background-image: url("../../img/salon.svg");
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        &--massage {
+            background-image: url("../../img/massage.svg");
+            align-self: first baseline;
+        }
+
+        &--bathroom {
+            background-image: url("../../img/bathroom.svg");
+            align-self: last baseline;
+        }
+
+        &--massage-package {
+            background-image: url("../../img/massage-2.svg");
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        &--haircut {
+            background-image: url("../../img/haircut.svg");
+            align-self: first baseline;
+        }
+
+        &--head-package {
+            background-image: url("../../img/feet.svg");
+            align-self: last baseline;
+        }
+
+        &:hover .grid-img-caption:last-child {
+            opacity: 1;
+        }
+    }
+
+    .grid-img-caption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        font-family: $font-family-3;
+        padding: 1.5rem 0 0 3rem;
+        background: linear-gradient(
+            to top,
+            rgba($color-white, 0.9) 5%,
+            rgba($color-white, 0.6) 50%,
+            transparent 95%
+        );
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        transition: all 0.5s;
+        opacity: 0;
+
+        &-text {
+            position: absolute;
+            left: 3rem;
+            bottom: 2rem;
+        }
+
+        .service-title-secondary {
+            margin: 0;
+            padding-bottom: 2.5rem;
+            line-height: 3.6rem;
+            color: $color-primary;
+        }
+
+        .service-title-tertiary {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            color: $color-grey-dark-2;
+            padding-bottom: 1rem;
+        }
+
+        &--tarif {
+            line-height: 1.9rem;
+            font-size: 1.6rem;
+            color: $color-grey-dark-2;
+            font-weight: 500;
+
+            &-price {
+                color: $color-secondary-dark-4;
+                font-weight: 800;
+            }
+        }
+
+        &-2 {
+            background: linear-gradient(
+                to top,
+                rgba($color-black, 0.5) 5%,
+                rgba($color-black, 0.35) 50%,
+                transparent 95%
+            );
+        }
+
+        .heading-secondary--main,
+        .heading-secondary--sub {
+            margin: 0 0 1.5rem;
+            color: $color-grey-light-2;
+        }
+    }
+}
