@@ -5,8 +5,67 @@
     max-width: $grid-width;
     margin: auto;
 
-    .separator {
-        margin: 0 5rem 0 5rem;
-        border: .1rem solid $color-grey-light-3;
+    .offers-container {
+        display: flex;
+        gap: 3rem;
+        margin: 6rem;
+        max-width: $grid-width;
+
+        .offer {
+            // position: relative;
+            flex: 1;
+            height: 72rem;
+            position: relative;
+            border-radius: 2rem;
+            background-color: $color-wheat-light-1;
+            
+            &__name {
+                align-content: center;
+                margin: 0;
+                padding-left: 2.5rem;
+                height: 50%;
+                color: $color-black;
+                font-size: 10rem;
+                line-height: 12rem;
+                text-align: left;
+            }
+
+            &__info {
+                display: flex;
+                height: 50%;
+                
+                &--text {
+                    flex: 1;
+                    color: $color-black;
+                    align-content: center;
+                    margin: 0;
+                    font-size: 2.4rem;
+                    padding-left: .9rem;
+
+                    &-sub {
+                        display: block;
+                    }
+                }
+                
+                &--img {
+                    position: relative;
+                    flex: 1;
+                    // height: 80%;
+                    background-image: url("../../img/spa.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: right;
+                }
+            }
+
+            &__btn--view-all {
+                width: 25rem;
+                height: 6.5rem;
+                color: $color-black;
+                background-color: rgba($color: $color-white, $alpha: .7);
+                backdrop-filter: blur(.3rem);
+                z-index: 2;
+            }
+        }
     }
 }

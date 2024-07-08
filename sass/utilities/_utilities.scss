@@ -1,0 +1,35 @@
+
+.section-separator {
+    margin: 0 5rem 0 5rem;
+    border: .1rem solid $color-grey-light-3;
+}
+
+.left-separator {
+    position: absolute;
+    top: 30%;
+    left: -.5rem;
+    height: 16.6rem;
+    width: 1rem;
+    background-color: $color-black;
+    border-radius: 5rem;
+}
+
+.top-separator {
+    position: absolute;
+    left: 2rem;
+    height: .4rem;
+    width: 20rem;
+    background-color: $color-white;
+    border-radius: 5rem;
+}
+
+.background-overlay--dark {
+    position: absolute;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $color-black, $alpha: .3);
+    border-radius: 2rem;
+    z-index: 1;
+}

@@ -1,3 +1,34 @@
+.section-separator {
+  margin: 0 5rem 0 5rem;
+  border: 0.1rem solid #bcbcbc; }
+
+.left-separator {
+  position: absolute;
+  top: 30%;
+  left: -.5rem;
+  height: 16.6rem;
+  width: 1rem;
+  background-color: #000;
+  border-radius: 5rem; }
+
+.top-separator {
+  position: absolute;
+  left: 2rem;
+  height: .4rem;
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 5rem; }
+
+.background-overlay--dark {
+  position: absolute;
+  top: o;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  z-index: 1; }
+
 *,
 *::before,
 *::after {
@@ -162,7 +193,33 @@ a {
   border-radius: .8rem;
   border: none;
   background: rgba(0, 0, 0, 0.3);
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
+  .btn--view-all:hover {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--view-all:active {
+    transform: translate(-50%, -48%);
+    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--buy-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  padding: .7rem 2.3rem;
+  border-radius: 5rem;
+  background-color: #F1C644; }
+  .btn--buy-now:hover {
+    background-color: #ffb900;
+    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--buy-now:active {
+    transform: translate(-50%, -48%);
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.2); }
 
 .background-image--oval {
   background-image: url("../../icons/oval.svg");
@@ -396,6 +453,49 @@ a {
   padding: 10rem 0;
   max-width: 114rem;
   margin: auto; }
-  .section-services .separator {
-    margin: 0 5rem 0 5rem;
-    border: 0.1rem solid #bcbcbc; }
+  .section-services .offers-container {
+    display: flex;
+    gap: 3rem;
+    margin: 6rem;
+    max-width: 114rem; }
+    .section-services .offers-container .offer {
+      flex: 1;
+      height: 72rem;
+      position: relative;
+      border-radius: 2rem;
+      background-color: #EAE9E5; }
+      .section-services .offers-container .offer__name {
+        align-content: center;
+        margin: 0;
+        padding-left: 2.5rem;
+        height: 50%;
+        color: #000;
+        font-size: 10rem;
+        line-height: 12rem;
+        text-align: left; }
+      .section-services .offers-container .offer__info {
+        display: flex;
+        height: 50%; }
+        .section-services .offers-container .offer__info--text {
+          flex: 1;
+          color: #000;
+          align-content: center;
+          margin: 0;
+          font-size: 2.4rem;
+          padding-left: .9rem; }
+          .section-services .offers-container .offer__info--text-sub {
+            display: block; }
+        .section-services .offers-container .offer__info--img {
+          position: relative;
+          flex: 1;
+          background-image: url("../../img/spa.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: right; }
+      .section-services .offers-container .offer__btn--view-all {
+        width: 25rem;
+        height: 6.5rem;
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(0.3rem);
+        z-index: 2; }
