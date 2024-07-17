@@ -1,15 +1,14 @@
-
 .section-services {
     padding: 10rem 0;
     max-width: $grid-width;
     margin: auto;
-    
+
     .offers-container {
         display: flex;
         gap: 3rem;
         margin: 6rem;
         max-width: $grid-width;
-        
+
         .offer {
             // position: relative;
             flex: 1;
@@ -17,7 +16,7 @@
             position: relative;
             border-radius: 2rem;
             background-color: $color-wheat-light-1;
-            
+
             &__name {
                 align-content: center;
                 margin: 0;
@@ -28,24 +27,24 @@
                 line-height: 12rem;
                 text-align: left;
             }
-            
+
             &__info {
                 display: flex;
                 height: 50%;
-                
+
                 &--text {
                     flex: 1;
                     color: $color-black;
                     align-content: center;
                     margin: 0;
                     font-size: 2.4rem;
-                    padding-left: .9rem;
-                    
+                    padding-left: 0.9rem;
+
                     &-sub {
                         display: block;
                     }
                 }
-                
+
                 &--img {
                     position: relative;
                     flex: 1;
@@ -56,13 +55,13 @@
                     background-position: right;
                 }
             }
-            
+
             &__btn--view-all {
                 width: 25rem;
                 height: 6.5rem;
                 color: $color-black;
-                background-color: rgba($color: $color-white, $alpha: .7);
-                backdrop-filter: blur(.3rem);
+                background-color: rgba($color: $color-white, $alpha: 0.7);
+                backdrop-filter: blur(0.3rem);
                 z-index: 2;
             }
         }
@@ -71,10 +70,94 @@
 
 .section-stories {
     background-color: $color-grey-light-1;
-    padding: 10rem 5rem ;
+    padding: 10rem 5rem;
 
     &__title {
         width: 90rem;
         margin: 0 auto 10rem;
+    }
+}
+
+.section-guide {
+    background-color: $color-wheat-dark-1;
+    padding: 10rem 5rem;
+    // height: 100vh;
+
+    .guide__container {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        &--img {
+            max-width: $grid-width;
+            margin-left: auto;
+
+            .guide__img {
+                width: 100%;
+            }
+        }
+
+        &--steps {
+            position: absolute;
+            top: 50%;
+            left: 6%;
+            transform: translate(0, -50%);
+            max-width: 63rem;
+            height: 49rem;
+            padding: 5rem;
+            background-color: rgba($color: $color-white, $alpha: 0.2);
+            backdrop-filter: blur(1.5rem);
+            border-radius: 1.5rem;
+            box-shadow: 0 0 1rem 1rem rgba($color: $color-black, $alpha: 0.2);
+
+            .steps-title {
+                color: $color-black;
+                margin: 4rem 0 7rem 1rem;
+            }
+
+            .step {
+                display: flex;
+                column-gap: 2rem;
+                margin-bottom: 3rem;
+
+                &__number {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    display: inline-block;
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+
+                    & > span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-weight: 600;
+                        font-size: 2rem;
+                    }
+
+                    &--1 {
+                        background-color: $color-step-1;
+                    }
+
+                    &--2 {
+                        background-color: $color-step-2;
+                    }
+
+                    &--3 {
+                        background-color: $color-step-3;
+                    }
+                }
+
+                &__text {
+                    width: 90%;
+                    font-weight: 400;
+                    font-size: 1.9rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
     }
 }

@@ -509,7 +509,7 @@ a {
           align-content: center;
           margin: 0;
           font-size: 2.4rem;
-          padding-left: .9rem; }
+          padding-left: 0.9rem; }
           .section-services .offers-container .offer__info--text-sub {
             display: block; }
         .section-services .offers-container .offer__info--img {
@@ -533,3 +533,61 @@ a {
   .section-stories__title {
     width: 90rem;
     margin: 0 auto 10rem; }
+
+.section-guide {
+  background-color: #FAF2D7;
+  padding: 10rem 5rem; }
+  .section-guide .guide__container {
+    position: relative;
+    top: 0;
+    left: 0; }
+    .section-guide .guide__container--img {
+      max-width: 114rem;
+      margin-left: auto; }
+      .section-guide .guide__container--img .guide__img {
+        width: 100%; }
+    .section-guide .guide__container--steps {
+      position: absolute;
+      top: 50%;
+      left: 6%;
+      transform: translate(0, -50%);
+      max-width: 63rem;
+      height: 49rem;
+      padding: 5rem;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(1.5rem);
+      border-radius: 1.5rem;
+      box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+      .section-guide .guide__container--steps .steps-title {
+        color: #000;
+        margin: 4rem 0 7rem 1rem; }
+      .section-guide .guide__container--steps .step {
+        display: flex;
+        column-gap: 2rem;
+        margin-bottom: 3rem; }
+        .section-guide .guide__container--steps .step__number {
+          position: relative;
+          top: 0;
+          left: 0;
+          display: inline-block;
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%; }
+          .section-guide .guide__container--steps .step__number > span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 600;
+            font-size: 2rem; }
+          .section-guide .guide__container--steps .step__number--1 {
+            background-color: #C4CCF6; }
+          .section-guide .guide__container--steps .step__number--2 {
+            background-color: #FEC1C1; }
+          .section-guide .guide__container--steps .step__number--3 {
+            background-color: #AEF1BF; }
+        .section-guide .guide__container--steps .step__text {
+          width: 90%;
+          font-weight: 400;
+          font-size: 1.9rem;
+          line-height: 2.5rem; }
