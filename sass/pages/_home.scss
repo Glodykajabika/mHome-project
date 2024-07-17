@@ -1,16 +1,15 @@
 
 .section-services {
-    // background-color: $color-grey-light-1;
     padding: 10rem 0;
     max-width: $grid-width;
     margin: auto;
-
+    
     .offers-container {
         display: flex;
         gap: 3rem;
         margin: 6rem;
         max-width: $grid-width;
-
+        
         .offer {
             // position: relative;
             flex: 1;
@@ -29,7 +28,7 @@
                 line-height: 12rem;
                 text-align: left;
             }
-
+            
             &__info {
                 display: flex;
                 height: 50%;
@@ -41,7 +40,7 @@
                     margin: 0;
                     font-size: 2.4rem;
                     padding-left: .9rem;
-
+                    
                     &-sub {
                         display: block;
                     }
@@ -57,7 +56,7 @@
                     background-position: right;
                 }
             }
-
+            
             &__btn--view-all {
                 width: 25rem;
                 height: 6.5rem;
@@ -67,5 +66,15 @@
                 z-index: 2;
             }
         }
+    }
+}
+
+.section-stories {
+    background-color: $color-grey-light-1;
+    padding: 10rem 5rem ;
+
+    &__title {
+        width: 90rem;
+        margin: 0 auto 10rem;
     }
 }

@@ -40,6 +40,10 @@ body {
     text-transform: capitalize;
 }
 
+.title {
+    text-transform: none;
+}
+
 .paragraph {
     font-size: $default-font-size;
 }
