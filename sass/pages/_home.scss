@@ -161,3 +161,37 @@
         }
     }
 }
+
+.section-footer {
+    background-color: $color-blue-grey;
+    padding: 10rem 5rem;
+
+    .social-media__links {
+        display: flex;
+        column-gap: 2rem;
+
+        &--text {
+            color: $color-white;
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 2.4rem;
+            align-self: center;
+        }
+
+        &--icons {
+            display: flex;
+            column-gap: 2.5rem;
+
+            & > .icon {
+                width: 2rem;
+                cursor: pointer;
+                transition: all .5s;
+
+                &:hover {
+                    transform: translateY(-.5rem) scale(1.3);
+                    filter: invert(50%) sepia(200%) saturate(600%) hue-rotate(90deg) brightness(150%) contrast(100%);
+                }
+            }
+        }
+    }
+}

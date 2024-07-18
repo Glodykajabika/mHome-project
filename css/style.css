@@ -348,6 +348,49 @@ a {
     .section-stories__grid .story__text--paragraph {
       font-weight: 500; }
 
+.section-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  column-gap: 10rem;
+  margin-top: 5rem;
+  font-size: 2rem; }
+  .section-footer__grid--discover-links, .section-footer__grid--company-links {
+    padding-bottom: 0.5rem; }
+  .section-footer__grid--download-text {
+    text-align: left;
+    font-weight: 600; }
+  .section-footer__grid--download-links {
+    display: block;
+    border: 0.3rem solid #fff;
+    max-width: 22rem;
+    margin-top: 2rem;
+    padding: 1rem .5rem;
+    background-color: #000;
+    border-radius: 2rem; }
+    .section-footer__grid--download-links .app__link {
+      display: flex;
+      column-gap: 2rem;
+      text-align: left; }
+      .section-footer__grid--download-links .app__link--logo {
+        align-self: center; }
+      .section-footer__grid--download-links .app__link--text {
+        font-size: 1rem; }
+        .section-footer__grid--download-links .app__link--text > span {
+          display: block;
+          font-size: 2rem; }
+  .section-footer__grid .heading-footer {
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem; }
+  .section-footer__grid .link {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    transition: all .3s; }
+    .section-footer__grid .link:hover {
+      color: #7ed56f; }
+
 .header {
   padding: 2rem;
   margin: 1rem auto;
@@ -591,3 +634,26 @@ a {
           font-weight: 400;
           font-size: 1.9rem;
           line-height: 2.5rem; }
+
+.section-footer {
+  background-color: #5E6278;
+  padding: 10rem 5rem; }
+  .section-footer .social-media__links {
+    display: flex;
+    column-gap: 2rem; }
+    .section-footer .social-media__links--text {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 2.4rem;
+      align-self: center; }
+    .section-footer .social-media__links--icons {
+      display: flex;
+      column-gap: 2.5rem; }
+      .section-footer .social-media__links--icons > .icon {
+        width: 2rem;
+        cursor: pointer;
+        transition: all .5s; }
+        .section-footer .social-media__links--icons > .icon:hover {
+          transform: translateY(-0.5rem) scale(1.3);
+          filter: invert(50%) sepia(200%) saturate(600%) hue-rotate(90deg) brightness(150%) contrast(100%); }
