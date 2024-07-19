@@ -194,19 +194,6 @@ a {
     transform: translate(-50%, -48%);
     box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn--book-now {
-  border: 0.3rem solid #2a41bf;
-  display: block;
-  font-size: 2rem;
-  font-weight: 900;
-  color: #283891;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  margin: 1rem auto;
-  border-radius: 1rem; }
-  .btn--book-now:hover {
-    transform: translate(0); }
-
 .background-image--oval {
   background-image: url("../../icons/oval.svg");
   background-repeat: no-repeat;
@@ -768,7 +755,7 @@ a {
           padding-bottom: 2rem;
           text-align: left; }
         .services-section .services__grid-service-name--text {
-          font-size: 1.5rem;
+          font-size: 2rem;
           padding-bottom: 1.5rem; }
         .services-section .services__grid-service-name .services__grid-service--sub-services {
           margin-top: 2rem;
@@ -786,7 +773,8 @@ a {
               border-left: 0.4rem solid #026a1c;
               padding-left: 1rem;
               width: 100%;
-              font-weight: 500; }
+              font-weight: 500;
+              cursor: pointer; }
       .services-section .services__grid .row {
         display: grid;
         grid-column: 1 / span 3;
