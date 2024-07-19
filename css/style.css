@@ -354,46 +354,6 @@ a {
   column-gap: 10rem;
   margin-top: 5rem;
   font-size: 2rem; }
-  .section-footer__grid--discover-links, .section-footer__grid--company-links {
-    padding-bottom: 0.5rem; }
-  .section-footer__grid--download-text {
-    text-align: left;
-    font-weight: 600; }
-  .section-footer__grid--download-links {
-    display: block;
-    border: 0.3rem solid #fff;
-    max-width: 22rem;
-    margin-top: 2rem;
-    padding: 1rem .5rem;
-    background-color: #000;
-    border-radius: 2rem; }
-    .section-footer__grid--download-links .app__link {
-      display: flex;
-      column-gap: 2rem;
-      text-align: left; }
-      .section-footer__grid--download-links .app__link--logo {
-        align-self: center; }
-      .section-footer__grid--download-links .app__link--text {
-        font-size: 1rem; }
-        .section-footer__grid--download-links .app__link--text > span {
-          display: block;
-          font-size: 2rem;
-          padding-top: .5rem; }
-    .section-footer__grid--download-links:hover {
-      transform: scale(1.05);
-      box-shadow: 1rem 1rem 1rem 0.2rem rgba(0, 0, 0, 0.5); }
-  .section-footer__grid .heading-footer {
-    font-weight: 300;
-    padding-left: 1rem;
-    padding-bottom: 1.5rem; }
-  .section-footer__grid .link {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-    font-weight: 600;
-    transition: all .3s; }
-    .section-footer__grid .link:hover {
-      color: #7ed56f; }
 
 .header {
   padding: 2rem;
@@ -522,6 +482,52 @@ a {
       border-color: #fff; }
       .nav.sticky .nav__link:hover {
         color: #283891; }
+
+.section-footer__grid--discover-links, .section-footer__grid--company-links {
+  padding-bottom: 0.5rem; }
+
+.section-footer__grid--download-text {
+  text-align: left;
+  font-weight: 600; }
+
+.section-footer__grid--download-links {
+  display: block;
+  border: 0.3rem solid #fff;
+  max-width: 22rem;
+  margin-top: 2rem;
+  padding: 1rem .5rem;
+  background-color: #000;
+  border-radius: 2rem;
+  transition: all .3s; }
+  .section-footer__grid--download-links .app__link {
+    display: flex;
+    column-gap: 2rem;
+    text-align: left; }
+    .section-footer__grid--download-links .app__link--logo {
+      align-self: center; }
+    .section-footer__grid--download-links .app__link--text {
+      font-size: 1rem; }
+      .section-footer__grid--download-links .app__link--text > span {
+        display: block;
+        font-size: 2rem;
+        padding-top: .5rem; }
+  .section-footer__grid--download-links:hover {
+    transform: scale(1.05);
+    box-shadow: 1rem 1rem 1rem 0.2rem rgba(0, 0, 0, 0.5); }
+
+.section-footer__grid .heading-footer {
+  font-weight: 300;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem; }
+
+.section-footer__grid .link {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  transition: all .3s; }
+  .section-footer__grid .link:hover {
+    color: #7ed56f; }
 
 .section-services {
   padding: 10rem 0;
