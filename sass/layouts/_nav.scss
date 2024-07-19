@@ -72,6 +72,11 @@
         }
     }
 
+    &.hidden {
+        display: none;
+        transition: all .3s;
+    }
+
     &.sticky {
         position: fixed;
         top: 0;
@@ -79,7 +84,7 @@
         width: 100%;
         background-color: $color-primary;
         z-index: 1000;
-        transition: all 0.4s linear;
+        transition: all .4s linear;
         box-shadow: 0 1rem 1rem rgba($color: $color-black, $alpha: .3);
 
         & .nav {

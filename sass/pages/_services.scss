@@ -1,0 +1,151 @@
+.services {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+
+    &-home {
+        position: relative;
+        display: grid;
+        top: 0;
+        left: 0;
+        height: 85vh;
+    }
+
+    &__search-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-content: center;
+        justify-content: center;
+        display: block;
+        background-image: linear-gradient(
+                rgba($color-black, 0.5),
+                rgba($color-black, 0.5)
+            ),
+            url("../../img/services-background.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 85vh;
+
+        &--headings {
+            // display: grid;
+            margin: 0 auto;
+            padding: 0;
+            color: $color-white;
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 6rem;
+            overflow: hidden;
+            height: 10rem;
+            width: 98rem;
+
+            & > span {
+                display: block;
+                height: 10rem;
+                animation: spin_words 20s infinite;
+
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        &--search-bar {
+            max-width: 55rem;
+
+            .search-bar-input {
+                background-color: rgba($color: $color-white, $alpha: 0.4);
+                backdrop-filter: blur(1.5rem);
+                border-color: $color-grey-light-3;
+
+                &:focus {
+                    border-color: $color-secondary-light-2;
+                }
+
+                &::placeholder {
+                    color: $color-grey-light-2;
+                }
+            }
+        }
+    }
+
+    &-section {
+        background-color: $color-grey-light-2;
+        padding-bottom: 15rem;
+
+        .services-heading {
+            padding: 11rem 0 5rem;
+            text-align: center;
+        }
+
+        .services__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+            max-width: 140rem;
+            margin: 0 auto;
+
+            &-service {
+                &--img {
+                    width: 100%;
+                }
+
+                &-name {
+                    border: 0.2rem solid $color-grey-light-3;
+                    padding: 1.5rem;
+                    border-top: none;
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                    box-shadow: 0 0 1rem 1rem
+                        rgba($color: $color-black, $alpha: 0.05
+                    );
+
+                    &--title {
+                        margin: 0;
+                        padding-bottom: 2rem;
+                        text-align: left;
+                    }
+
+                    &--text {
+                        font-size: 1.5rem;
+                        padding-bottom: 1.5rem;
+                    }
+
+                    .services__grid-service--sub-services {
+                        margin-top: 2rem;
+                        padding: 4rem 0 2rem ;
+                        border-top: .2rem solid $color-grey-light-3;
+
+                        .sub-service {
+                            margin: 0;
+                            font-weight: 400;
+                            font-size: 2.5rem;
+                            transition: all .3s;
+
+                            &:not(:last-child) {
+                                margin-bottom: 2.5rem;
+                            }
+
+                            &:hover {
+                                color: $color-secondary-dark;
+                                border-left: .4rem solid $color-secondary-dark;
+                                padding-left: 1rem;
+                                width: 100%;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row {
+                display: grid;
+                grid-column: 1 / span 3;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 5rem;
+            }
+        }
+    }
+}

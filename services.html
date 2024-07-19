@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style sheet link -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Icon link -->
+    <link rel="shortcut icon" type="image/svg" href="./icons/Logo.svg" />
+
+    <!-- Squada one fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet" />
+
+    <!-- Inter fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Squada+One&display=swap"
+        rel="stylesheet" />
+
+    <!-- Montserrat fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <title>mHome</title>
+</head>
+
+<body>
+    <nav class="nav hiddenNav" id="nav">
+        <div class="nav__logo">
+            <img src="./icons/Logo-blue.svg" alt="logo" class="nav__logo-img--blue" />
+
+            <img src="./icons/Logo.svg" alt="logo" class="nav__logo-img--white" />
+
+            <h5 class="nav__logo-text">mHome Services</h5>
+        </div>
+
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#" class="nav__link btn">Services</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link btn">sign up / log in</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link nav__link--special btn">Become a provider</a>
+            </li>
+        </ul>
+
+        <div class="nav__icons">
+            <a href="#" class="nav__link">
+                <img src="./icons/upcoming.svg" alt="upcoming" class="nav__link-icon nav__link-icon-2" />
+            </a>
+
+            <a href="#" class="nav__link">
+                <img src="./icons/cart.svg" alt="cart" class="nav__link-icon nav__link-icon-1" />
+            </a>
+
+            <a href="#" class="nav__link">
+                <img src="./icons/notification.svg" alt="notification" class="nav__link-icon nav__link-icon-3" />
+            </a>
+
+            <a href="#" class="nav__link">
+                <img src="./icons/user.svg" alt="user" class="nav__link-icon nav__link-icon-4" />
+            </a>
+        </div>
+    </nav>
+
+    <section class="services">
+        <div class="services-home">
+            <div class="services__search-box">
+                <h1 class="heading-primary services__search-box--headings">
+                    <span>
+                        How can we hep you?
+                    </span>
+
+                    <span>
+                        How may we assist you today?
+                    </span>
+
+                    <span>
+                        How can we support your needs?
+                    </span>
+
+                    <span>
+                        What assistance can we provide?
+                    </span>
+
+                    <span>
+                        How can we hep you?
+                    </span>
+                </h1>
+
+                <div class="search-bar services__search-box--search-bar">
+                    <input type="text" class="search-bar-input" placeholder="Search for a service" />
+
+                    <button class="btn--search">
+                        <img src="./icons/search.svg" class="search-icon" alt="Search" />
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-section">
+            <h2 class="heading-secondary services-heading">
+                Are you overwhelmed? Let providers give you a helping hand!
+            </h2>
+
+            <div class="services__grid">
+                <div class="services__grid-service">
+                    <img src="./img/cleaning.svg" alt="Cleaning" class="services__grid-service--img">
+
+                    <div class="services__grid-service-name">
+                        <h2 class="heading-secondary services__grid-service-name--title">
+                            Cleaning
+                        </h2>
+
+                        <p class="paragraph services__grid-service-name--text">
+                            Expert cleaning for homes, offices, and more.
+                            Reliable and thorough.
+                        </p>
+
+                        <button class="btn--book-now btn">
+                            Book now!
+                        </button>
+
+                        <div class="services__grid-service--sub-services">
+                            <h2 class="heading-secondary sub-service">
+                                Residential Cleaning
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Commercial Cleaning
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__grid-service">
+                    <img src="./img/suit-rental.svg" alt="Suit Rental" class="services__grid-service--img">
+
+                    <div class="services__grid-service-name">
+                        <h2 class="heading-secondary services__grid-service-name--title">
+                            Suit Rental
+                        </h2>
+
+                        <p class="paragraph services__grid-service-name--text">
+                            Expert cleaning for homes, offices, and more.
+                            Reliable and thorough.
+                        </p>
+
+                        <button class="btn--book-now btn">
+                            Book now!
+                        </button>
+
+                        <div class="services__grid-service--sub-services">
+                            <h2 class="heading-secondary sub-service">
+                                Washing and drying
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Ironing and pressing
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Suit and formal wear Rental
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Stain removal
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Alterations and repairs
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__grid-service">
+                    <img src="./img/laundry.svg" alt="Laundry and dry cleaning" class="services__grid-service--img">
+
+                    <div class="services__grid-service-name">
+                        <h2 class="heading-secondary services__grid-service-name--title">
+                            Laundry and dry cleaning
+                        </h2>
+
+                        <p class="paragraph services__grid-service-name--text">
+                            Expert cleaning for homes, offices, and more.
+                            Reliable and thorough.
+                        </p>
+
+                        <button class="btn--book-now btn">
+                            Book now!
+                        </button>
+
+                        <div class="services__grid-service--sub-services">
+                            <h2 class="heading-secondary sub-service">
+                                Electrical
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                HVAC services
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Plumbing
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__grid-service">
+                    <img src="./img/catering.svg" alt="Catering and food delivery" class="services__grid-service--img">
+
+                    <div class="services__grid-service-name">
+                        <h2 class="heading-secondary services__grid-service-name--title">
+                            Catering and food delivery
+                        </h2>
+
+                        <p class="paragraph services__grid-service-name--text">
+                            Expert cleaning for homes, offices, and more.
+                            Reliable and thorough.
+                        </p>
+
+                        <button class="btn--book-now btn">
+                            Book now!
+                        </button>
+
+                        <div class="services__grid-service--sub-services">
+                            <h2 class="heading-secondary sub-service">
+                                Event catering
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Grocery delivery
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Meal prep services
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__grid-service">
+                    <img src="./img/technology-IT.svg" alt="Technology and IT" class="services__grid-service--img">
+
+                    <div class="services__grid-service-name">
+                        <h2 class="heading-secondary services__grid-service-name--title">
+                            Technology and IT
+                        </h2>
+
+                        <p class="paragraph services__grid-service-name--text">
+                            Expert cleaning for homes, offices, and more.
+                            Reliable and thorough.
+                        </p>
+
+                        <button class="btn--book-now btn">
+                            Book now!
+                        </button>
+
+                        <div class="services__grid-service--sub-services">
+                            <h2 class="heading-secondary sub-service">
+                                Smart home services
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Technical support
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Home office setup
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__grid-service">
+                    <img src="./img/transportation.svg" alt="Transportation" class="services__grid-service--img">
+
+                    <div class="services__grid-service-name">
+                        <h2 class="heading-secondary services__grid-service-name--title">
+                            Transportation
+                        </h2>
+
+                        <p class="paragraph services__grid-service-name--text">
+                            Expert cleaning for homes, offices, and more.
+                            Reliable and thorough.
+                        </p>
+
+                        <button class="btn--book-now btn">
+                            Book now!
+                        </button>
+
+                        <div class="services__grid-service--sub-services">
+                            <h2 class="heading-secondary sub-service">
+                                Bikes and scooters rental
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Car rental and leasing
+                            </h2>
+
+                            <h2 class="heading-secondary sub-service">
+                                Ride-sharing
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="services__grid-service">
+                        <img src="./img/health.svg" alt="Health and wellness" class="services__grid-service--img">
+
+                        <div class="services__grid-service-name">
+                            <h2 class="heading-secondary services__grid-service-name--title">
+                                Health and wellness
+                            </h2>
+
+                            <p class="paragraph services__grid-service-name--text">
+                                Expert cleaning for homes, offices, and more.
+                                Reliable and thorough.
+                            </p>
+
+                            <button class="btn--book-now btn">
+                                Book now!
+                            </button>
+
+                            <div class="services__grid-service--sub-services">
+                                <h2 class="heading-secondary sub-service">
+                                    Home healthcare
+                                </h2>
+
+                                <h2 class="heading-secondary sub-service">
+                                    Mental heath support
+                                </h2>
+
+                                <h2 class="heading-secondary sub-service">
+                                    Personal training
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__grid-service">
+                        <img src="./img/child-care.svg" alt="Child care and educational"
+                            class="services__grid-service--img">
+
+                        <div class="services__grid-service-name">
+                            <h2 class="heading-secondary services__grid-service-name--title">
+                                Child care and educational
+                            </h2>
+
+                            <p class="paragraph services__grid-service-name--text">
+                                Expert cleaning for homes, offices, and more.
+                                Reliable and thorough.
+                            </p>
+
+                            <button class="btn--book-now btn">
+                                Book now!
+                            </button>
+
+                            <div class="services__grid-service--sub-services">
+                                <h2 class="heading-secondary sub-service">
+                                    Extracurricular class
+                                </h2>
+
+                                <h2 class="heading-secondary sub-service">
+                                    Tutoring
+                                </h2>
+
+                                <h2 class="heading-secondary sub-service">
+                                    Daycare
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-footer">
+        <div class="social-media__links">
+            <p class="social-media__links--text paragraph">
+                Follow us! We are present on:
+
+            <ul class="social-media__links--icons">
+                <li class="icon">
+                    <img src="./icons/twitter.svg" alt="twitter logo">
+                </li>
+
+                <li class="icon">
+                    <img src="./icons/linkedIn.svg" alt="linkedIn logo">
+                </li>
+
+                <li class="icon">
+                    <img src="./icons/meta.svg" alt="meta logo">
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="section-footer__grid">
+            <ul class="section-footer__grid--discover">
+                <h4 class="heading-footer">
+                    Discover
+                </h4>
+
+                <li class="section-footer__grid--discover-links">
+                    <a href="#" class="link">
+                        Become a service provider
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--discover-links">
+                    <a href="#" class="link">
+                        Services by city
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--discover-links">
+                    <a href="#" class="link">
+                        All the services
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--discover-links">
+                    <a href="#" class="link">
+                        Help and contacts
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="section-footer__grid--company">
+                <h4 class="heading-footer">
+                    The company
+                </h4>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Who are we?
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Blog
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Terms and conditions & confidentiality
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Platform information
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Mentions legal
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="section-footer__grid--download">
+                <h4 class="heading-footer">
+                    Download our app
+                </h4>
+
+                <li class="section-footer__grid--download-text">
+                    Free yourself from the small tasks of daily life wherever you are with our app.
+                </li>
+
+                <a href="#" class="section-footer__grid--download-links">
+                    <li class="app__link">
+                        <img src="./icons/apple.svg" alt="Apple logo" class="app__link--logo">
+
+                        <p class="app__link--text">
+                            Download in
+
+                            <span>
+                                Apple store
+                            </span>
+                        </p>
+                    </li>
+                </a>
+
+                <a href="#" class="section-footer__grid--download-links">
+                    <li href="#" class="app__link">
+                        <img src="./icons/playStore.svg" alt="Apple logo" class="app__link--logo">
+
+                        <p class="app__link--text">
+                            Download in
+
+                            <span>
+                                Google play
+                            </span>
+                        </p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Link to external js files -->
+    <script src="./js/sticky-nav.js"></script>
+</body>
+
+</html>
