@@ -43,6 +43,8 @@ body {
   box-sizing: border-box; }
 
 @keyframes spin_words {
+  0% {
+    transform: translateY(2rem); }
   25% {
     transform: translateY(-10rem); }
   50% {
@@ -780,3 +782,68 @@ a {
         grid-column: 1 / span 3;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 5rem; }
+
+.section-sign-up {
+  align-content: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../../img/maintenance.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh; }
+  .section-sign-up .sign-up__box {
+    max-width: 95rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2rem);
+    border-radius: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.2);
+    margin: 0 auto; }
+    .section-sign-up .sign-up__box--text {
+      margin: auto;
+      font-size: 7rem;
+      text-align: center;
+      padding: 5rem 0 4rem; }
+    .section-sign-up .sign-up__box .sign-up__options {
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      max-width: 80%; }
+      .section-sign-up .sign-up__box .sign-up__options--link {
+        display: block;
+        height: 8rem;
+        border-radius: 50rem;
+        text-align: center;
+        align-content: center;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        transition: all .3s; }
+        .section-sign-up .sign-up__box .sign-up__options--link:not(:last-child) {
+          margin-bottom: 4rem; }
+      .section-sign-up .sign-up__box .sign-up__options .option--sign-up {
+        color: #fff;
+        background: #283891;
+        border: 0.3rem solid #283891; }
+        .section-sign-up .sign-up__box .sign-up__options .option--sign-up:hover {
+          color: #283891;
+          background: none; }
+      .section-sign-up .sign-up__box .sign-up__options .option--log-in {
+        color: #283891;
+        border: 0.3rem solid #283891; }
+        .section-sign-up .sign-up__box .sign-up__options .option--log-in:hover {
+          color: #fff;
+          background: #283891; }
+    .section-sign-up .sign-up__box .sign-up__footer {
+      width: 53rem;
+      margin: 0 auto;
+      padding: 0 0 6rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 400; }
+      .section-sign-up .sign-up__box .sign-up__footer span {
+        font-weight: 500;
+        color: #283891;
+        cursor: pointer;
+        padding: 0 .3rem;
+        transition: all .3s; }
+        .section-sign-up .sign-up__box .sign-up__footer span:hover {
+          color: #6ecaB3;
+          background-color: #2B2B2B; }
