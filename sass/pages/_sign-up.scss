@@ -46,6 +46,7 @@
             }
         }
 
+
         .sign-up__options {
             margin: 0 auto;
             margin-bottom: 5rem;
@@ -150,6 +151,18 @@
         margin: 10rem auto;
         z-index: 10;
 
+        .sign-in__options {
+            margin: 0 auto;
+            margin-bottom: 5rem;
+            max-width: 80%;
+        }
+
+        .form__title {
+            margin-bottom: 10rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+
         .sign-up__popup--footer {
             max-width: 53rem;
             margin: 0 auto;
@@ -189,6 +202,11 @@
                     background-color: $color-grey-dark-2;
                 }
             }
+        }
+
+        .log-in__span,
+        .sign-up__span {
+            cursor: pointer;
         }
     }
 }
