@@ -73,8 +73,9 @@
     }
 
     &.hidden {
+        opacity: 0;
         display: none;
-        transition: all .3s;
+        transition: all .4s;
     }
 
     &.sticky {
@@ -88,6 +89,8 @@
         box-shadow: 0 1rem 1rem rgba($color: $color-black, $alpha: .3);
 
         & .nav {
+            opacity: 1;
+            
             &__logo {
                 color: $color-white;
 

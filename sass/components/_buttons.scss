@@ -114,3 +114,49 @@
     }
 }
 
+
+.btn--create-account {
+    color: $color-white;
+    background: $color-primary;
+    border: 0.3rem solid $color-primary;
+    height: 8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    border-radius: 50rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-primary;
+        background: none;
+    }
+}
+
+.btn--back {
+    display: flex;
+    justify-content: space-between;
+    gap: .4rem;
+    margin: 3rem 2rem 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $color-primary;
+    transition: all .3s;
+
+    .left-arrow {
+        align-self: last baseline;
+    }
+
+    &:hover {
+        gap: .7rem;
+        color: $color-primary-dark-1;
+        border-left: .3rem solid $color-primary-dark-1;
+    }
+}

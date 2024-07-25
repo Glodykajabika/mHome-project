@@ -1,46 +1,67 @@
-
 .section-sign-up {
-    align-content: center;
-    background-image: linear-gradient(
-            rgba($color-white, 0.2),
-            rgba($color-white, 0.2)
-        ),
-        url("../../img/maintenance.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .background-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        align-content: center;
+        background-image: linear-gradient(
+                rgba($color-white, 0.2),
+                rgba($color-white, 0.2)
+            ),
+            url("../../img/maintenance.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
 
     .sign-up__box {
-        max-width: 95rem;
-        background: rgba($color: $color-black, $alpha: 0.3);
+        position: absolute;
+        width: 63%;
+        top: 50%;
+        left: 50%;
+        background: rgba($color: $color-black, $alpha: 0.15);
         backdrop-filter: blur(2rem);
         border-radius: 1.5rem;
-        box-shadow: .5rem .5rem 1rem .5rem rgba($color: $color-black, $alpha: 0.2);
-        margin: 0 auto;
+        box-shadow: 0.5rem 0.5rem 1rem 0.5rem
+            rgba($color: $color-black, $alpha: 0.2);
+        transform: translate(-50%, 20%);
+        transition: all .3s;
 
         &--text {
+            display: block;
             margin: auto;
             font-size: 7rem;
             text-align: center;
             padding: 5rem 0 4rem;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $color-primary-dark-2;
+            }
         }
 
         .sign-up__options {
             margin: 0 auto;
             margin-bottom: 5rem;
             max-width: 80%;
-            
+
             &--link {
                 display: block;
                 height: 8rem;
+                width: 100%;
                 border-radius: 50rem;
                 text-align: center;
                 align-content: center;
                 font-size: 2rem;
                 font-weight: 700;
                 text-transform: capitalize;
-                transition: all .3s;
+                transition: all 0.3s;
 
                 &:not(:last-child) {
                     margin-bottom: 4rem;
@@ -50,7 +71,7 @@
             .option--sign-up {
                 color: $color-white;
                 background: $color-primary;
-                border: .3rem solid $color-primary;
+                border: 0.3rem solid $color-primary;
 
                 &:hover {
                     color: $color-primary;
@@ -60,7 +81,7 @@
 
             .option--log-in {
                 color: $color-primary;
-                border: .3rem solid $color-primary;
+                border: 0.3rem solid $color-primary;
 
                 &:hover {
                     color: $color-white;
@@ -70,9 +91,9 @@
         }
 
         .sign-up__footer {
-            width: 53rem;
+            max-width: 53rem;
             margin: 0 auto;
-            padding: 0 0 6rem;
+            padding: 0 2rem 6rem;
             text-align: center;
             font-size: 2rem;
             font-weight: 400;
@@ -81,7 +102,86 @@
                 font-weight: 500;
                 color: $color-primary;
                 cursor: pointer;
-                padding: 0 .3rem;
+                padding: 0 0.3rem;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: $color-mixed;
+                    background-color: $color-grey-dark-2;
+                }
+            }
+        }
+    }
+
+    .popup {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(.5);
+        transition: all .3s;
+        z-index: 5;
+    }
+
+    .show-popup {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        transition: all .3s;
+    }
+
+    .hide {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+        transform: scale(1);
+    }
+
+    .sign-up__popup {
+        align-content: center;
+        width: 63%;
+        background: rgba($color: $color-black, $alpha: 0.15);
+        backdrop-filter: blur(2rem);
+        border-radius: 1.5rem;
+        box-shadow: 0.5rem 0.5rem 1rem 0.5rem
+            rgba($color: $color-black, $alpha: 0.2);
+        margin: 10rem auto;
+        z-index: 10;
+
+        .sign-up__popup--footer {
+            max-width: 53rem;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 400;
+
+            span {
+                font-weight: 500;
+                color: $color-primary;
+                cursor: pointer;
+                padding: 0 0.3rem;
+                transition: all 0.3s;
+                
+                &:hover {
+                    color: $color-mixed;
+                    background-color: $color-grey-dark-2;
+                }
+            }
+        }
+        
+        .log-in__link {
+            padding: 3rem 0 6rem;
+            text-align: center;
+            font-size: 2rem;
+            
+            span {
+                text-transform: capitalize;
+                font-weight: 900;
+                color: $color-primary;
+                padding: 0 0.3rem;
                 transition: all .3s;
 
                 &:hover {
