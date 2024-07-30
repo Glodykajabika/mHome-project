@@ -818,6 +818,42 @@ a {
           transform: translateY(-0.5rem) scale(1.3);
           filter: invert(50%) sepia(200%) saturate(600%) hue-rotate(90deg) brightness(150%) contrast(100%); }
 
+.section-header {
+  background-color: #FAF2D7; }
+  .section-header--title {
+    font-size: 7rem;
+    margin: 0;
+    max-width: 100%;
+    padding: 5rem 5rem 4rem;
+    font-weight: 600; }
+  .section-header--paragraph {
+    text-align: center;
+    font-size: 2rem; }
+  .section-header .application {
+    text-align: center;
+    margin: 3rem auto 5rem; }
+  .section-header .span {
+    font-weight: 700;
+    color: #283891;
+    cursor: pointer;
+    padding: 0 0.3rem;
+    transition: all 0.3s; }
+    .section-header .span:hover {
+      color: #6ecaB3;
+      background-color: #2B2B2B; }
+  .section-header__sections {
+    display: flex;
+    margin-top: 4rem; }
+    .section-header__sections .section__left {
+      width: 70%; }
+      .section-header__sections .section__left .paragraph-max-width {
+        text-align: center;
+        max-width: 65rem;
+        margin: 0 auto 4rem; }
+    .section-header__sections .section__right--img {
+      width: 40%;
+      align-self: flex-end; }
+
 .services {
   position: relative;
   top: 0;
