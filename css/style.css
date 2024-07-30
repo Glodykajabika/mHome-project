@@ -976,14 +976,15 @@ a {
         background: #283891;
         border: 0.3rem solid #283891; }
         .section-sign-up .sign-up__box .sign-up__options .option--sign-up:hover {
-          color: #283891;
-          background: none; }
+          background-color: rgba(2, 106, 28, 0.5);
+          border-color: #fff; }
       .section-sign-up .sign-up__box .sign-up__options .option--log-in {
         color: #283891;
         border: 0.3rem solid #283891; }
         .section-sign-up .sign-up__box .sign-up__options .option--log-in:hover {
-          color: #fff;
-          background: #283891; }
+          background-color: rgba(2, 106, 28, 0.5);
+          border-color: #fff;
+          color: #fff; }
     .section-sign-up .sign-up__box .sign-up__footer {
       max-width: 53rem;
       margin: 0 auto;

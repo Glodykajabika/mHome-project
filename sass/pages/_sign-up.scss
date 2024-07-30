@@ -75,18 +75,19 @@
                 border: 0.3rem solid $color-primary;
 
                 &:hover {
-                    color: $color-primary;
-                    background: none;
+                    background-color: rgba($color: $color-secondary-dark, $alpha: .5);;
+                    border-color: $color-white;
                 }
             }
-
+            
             .option--log-in {
                 color: $color-primary;
                 border: 0.3rem solid $color-primary;
-
+                
                 &:hover {
+                    background-color: rgba($color: $color-secondary-dark, $alpha: .5);
+                    border-color: $color-white;
                     color: $color-white;
-                    background: $color-primary;
                 }
             }
         }
