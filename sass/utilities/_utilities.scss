@@ -33,3 +33,26 @@
     border-radius: 2rem;
     z-index: 1;
 }
+
+.separators {
+    display: flex;
+    justify-content: space-between;
+    max-width: $grid-width;
+    margin: 10rem auto;
+
+    .left-sep, 
+    .right-sep {
+        background-color: $color-black;
+        width: 30%;
+        height: .2rem;
+        margin: auto;
+    }
+
+    .left-sep {
+        margin-left: 0;
+    }
+
+    .right-sep {
+        margin-right: 0;
+    }
+}
