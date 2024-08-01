@@ -732,6 +732,85 @@ a {
   .section-footer__grid .link:hover {
     color: #7ed56f; }
 
+.section-cleaning-firms > .search-bar {
+  margin-top: 20rem; }
+
+.section-cleaning-firms .firms .firms__heading {
+  display: flex;
+  margin: 10rem 0 15rem; }
+  .section-cleaning-firms .firms .firms__heading > .heading-secondary {
+    color: #000;
+    font-size: 5rem;
+    line-height: 6rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    justify-content: left;
+    width: 90%; }
+  .section-cleaning-firms .firms .firms__heading > .firms-sorting {
+    align-self: center;
+    font-size: 1.5rem; }
+    .section-cleaning-firms .firms .firms__heading > .firms-sorting #options {
+      border: none;
+      font-weight: 700; }
+
+.section-cleaning-firms .firms .firms__container .firm {
+  display: flex;
+  gap: 1rem;
+  background-color: #eee;
+  margin: 5rem auto;
+  border-bottom: 0.3rem solid #2B2B2B;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  max-width: 114rem; }
+  .section-cleaning-firms .firms .firms__container .firm__img {
+    width: 30%; }
+  .section-cleaning-firms .firms .firms__container .firm__details {
+    padding: 1rem;
+    align-content: center; }
+    .section-cleaning-firms .firms .firms__container .firm__details--name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem; }
+      .section-cleaning-firms .firms .firms__container .firm__details--name > .heading-tertiary {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        color: #000; }
+      .section-cleaning-firms .firms .firms__container .firm__details--name > span {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+        margin-right: 1rem; }
+      .section-cleaning-firms .firms .firms__container .firm__details--name .open {
+        color: #34A853; }
+      .section-cleaning-firms .firms .firms__container .firm__details--name .closed {
+        color: red; }
+    .section-cleaning-firms .firms .firms__container .firm__details--paragraph {
+      font-size: 1.5rem;
+      width: 90%;
+      margin-bottom: 1rem; }
+    .section-cleaning-firms .firms .firms__container .firm__details--phone-number, .section-cleaning-firms .firms .firms__container .firm__details--website {
+      color: #000080;
+      font-size: 1.5rem; }
+    .section-cleaning-firms .firms .firms__container .firm__details--website {
+      text-decoration: underline; }
+    .section-cleaning-firms .firms .firms__container .firm__details--adress {
+      display: flex;
+      gap: 2rem;
+      margin: 1rem 0; }
+      .section-cleaning-firms .firms .firms__container .firm__details--adress > img {
+        height: 1.7rem; }
+      .section-cleaning-firms .firms .firms__container .firm__details--adress > p {
+        font-size: 1.5rem; }
+    .section-cleaning-firms .firms .firms__container .firm__details .stars {
+      display: block;
+      width: 10rem;
+      margin-bottom: 3rem; }
+    .section-cleaning-firms .firms .firms__container .firm__details .btn--view-profil {
+      align-self: last baseline;
+      justify-self: last baseline; }
+
 .section-services {
   padding: 10rem 0;
   max-width: 114rem;

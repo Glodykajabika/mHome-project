@@ -1,0 +1,125 @@
+
+.section-cleaning-firms {
+    & > .search-bar {
+        margin-top: 20rem;
+    }
+
+    .firms {
+        .firms__heading {
+            display: flex;
+            margin: 10rem 0 15rem;
+
+            & > .heading-secondary {
+                color: $color-black;
+                font-size: 5rem;
+                line-height: 6rem;
+                text-align: center;
+                font-weight: 600;
+                margin: 0;
+                justify-content: left;
+                width: 90%;
+            }
+
+            & > .firms-sorting {
+                align-self: center;
+                font-size: 1.5rem;
+
+                #options {
+                    border: none;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .firms__container {
+            .firm {
+                display: flex;
+                gap: 1rem;
+                background-color: $color-grey-light-2;
+                margin: 5rem auto;
+                border-bottom: 0.3rem solid $color-grey-dark-2;
+                border-radius: 1rem;
+                border-bottom-left-radius: 0;
+                max-width: $grid-width;
+
+                &__img {
+                    width: 30%;
+                }
+
+                &__details {
+                    padding: 1rem;
+                    align-content: center;
+
+                    &--name {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 1.5rem;
+
+                        & > .heading-tertiary {
+                            font-size: 2.5rem;
+                            text-transform: capitalize;
+                            color: $color-black;
+                        }
+
+                        & > span {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            line-height: 3.5rem;
+                            margin-right: 1rem;
+                        }
+
+                        .open {
+                            color: $color-secondary-dark-1;
+                        }
+
+                        .closed {
+                            color: red;
+                        }
+                    }
+
+                    &--paragraph {
+                        font-size: 1.5rem;
+                        width: 90%;
+                        margin-bottom: 1rem;
+                    }
+
+                    &--phone-number,
+                    &--website {
+                        color: $color-primary-dark-3;
+                        font-size: 1.5rem;
+                    }
+
+                    &--website {
+                        text-decoration: underline;
+                    }
+
+                    &--adress {
+                        display: flex;
+                        gap: 2rem;
+                        margin: 1rem 0;
+
+                        & > img {
+                            height: 1.7rem;
+                        }
+
+                        & > p {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .stars {
+                        display: block;
+                        width: 10rem;
+                        margin-bottom: 3rem;
+                    }
+
+                    & .btn--view-profil {
+                        align-self: last baseline;
+                        justify-self: last baseline;
+                    }
+                }
+            }
+        }
+    }
+}
