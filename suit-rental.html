@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style sheet link -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Icon link -->
+    <link rel="shortcut icon" type="image/svg" href="./icons/Logo.svg" />
+
+    <!-- Squada one fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet" />
+
+    <!-- Inter fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Squada+One&display=swap"
+        rel="stylesheet" />
+
+    <!-- Montserrat fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <title>mHome | Rental suit</title>
+</head>
+
+<body>
+    <nav class="nav blue-nav" id="nav">
+        <div class="nav__logo">
+            <a href="index.html">
+
+                <img src="./icons/Logo-blue.svg" alt="logo" class="nav__logo-img--blue" />
+
+                <img src="./icons/Logo.svg" alt="logo" class="nav__logo-img--white" />
+            </a>
+
+            <h5 class="nav__logo-text">mHome Services</h5>
+        </div>
+
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="services.html" class="nav__link btn">Services</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="sign-up.html" class="nav__link btn">sign up / log in</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="provider.html" class="nav__link nav__link--special btn">Become a provider</a>
+            </li>
+        </ul>
+        <div class="nav__icons">
+            <a href="#" class="nav__link">
+                <img src="./icons/upcoming.svg" alt="upcoming" class="nav__link-icon nav__link-icon-2" />
+            </a>
+
+            <a href="#" class="nav__link">
+                <img src="./icons/cart.svg" alt="cart" class="nav__link-icon nav__link-icon-1" />
+            </a>
+
+            <a href="#" class="nav__link">
+                <img src="./icons/notification.svg" alt="notification" class="nav__link-icon nav__link-icon-3" />
+            </a>
+
+            <a href="#" class="nav__link">
+                <img src="./icons/user.svg" alt="user" class="nav__link-icon nav__link-icon-4" />
+            </a>
+        </div>
+    </nav>
+
+    <section class="section-rental-suit-firms">
+        <div class="search-bar">
+            <input type="text" class="search-bar-input" placeholder="Search for a service" />
+            <button class="btn--search">
+                <img src="./icons/search.svg" class="search-icon" alt="Search" />
+            </button>
+        </div>
+
+        <div class="firms">
+            <div class="firms__heading">
+                <h2 class="heading-secondary">Leading rental service.</h2>
+
+                <form class="firms-sorting">
+                    <label for="options">Sort:</label>
+                    <select id="options" name="options">
+                        <option value="option1">Default</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="firms__container">
+                <div class="firm">
+                    <img src="./img/joe-suit.svg" alt="Joe suit" class="firm__img">
+
+                    <div class="firm__details">
+                        <div class="firm__details--name">
+                            <h3 class="heading-tertiary">
+                                Joe suits Ets
+                            </h3>
+
+                            <span class="open">Open now</span>
+                        </div>
+
+                        <p class="firm__details--paragraph">
+                            Our suit rental service offers high-quality, styllish suits for all occasions with expert tailoring and a hassle-free rental process. Enjor flexible rental periods, online reservations, and timely delivery to ensure you look your best effortlessly.
+                        </p>
+
+                        <p class="firm__details--phone-number">
+                            (555) 123-4567
+                        </p>
+
+                        <p class="firm__details--website">
+                            www.joesuits@gmail.com
+                        </p>
+
+                        <div class="firm__details--adress">
+                            <img src="./icons/location.svg" alt="location">
+
+                            <p>
+                                Goma, Drc
+                            </p>
+                        </div>
+
+                        <img src="./icons/star.svg" alt="" class="stars">
+
+                        <button class="btn--view-profil">
+                            View profil
+                        </button>
+                    </div>
+                </div>
+
+                <div class="firm">
+                    <img src="./img/masculine-fashion.svg" alt="masculine-fashion" class="firm__img">
+
+                    <div class="firm__details">
+                        <div class="firm__details--name">
+                            <h3 class="heading-tertiary">
+                                Masculine Fashion
+                            </h3>
+
+                            <span class="closed">closed now</span>
+                        </div>
+
+                        <p class="firm__details--paragraph">
+                            Our suit rental service offers high-quality, styllish suits for all occasions with expert tailoring and a hassle-free rental process. Enjor flexible rental periods, online reservations, and timely delivery to ensure you look your best effortlessly.
+                        </p>
+
+                        <p class="firm__details--phone-number">
+                            (555) 123-4567
+                        </p>
+
+                        <p class="firm__details--website">
+                            www.masculinefashion@gmail.com
+                        </p>
+
+                        <div class="firm__details--adress">
+                            <img src="./icons/location.svg" alt="location">
+
+                            <p>
+                                Goma, Drc
+                            </p>
+                        </div>
+
+                        <img src="./icons/star.svg" alt="" class="stars">
+
+                        <button class="btn--view-profil">
+                            View profil
+                        </button>
+                    </div>
+                </div>
+
+                <div class="firm">
+                    <img src="./img/the-suit-co.svg" alt="The suit Co" class="firm__img">
+
+                    <div class="firm__details">
+                        <div class="firm__details--name">
+                            <h3 class="heading-tertiary">
+                                The suit Co
+                            </h3>
+
+                            <span class="closed">Closed now</span>
+                        </div>
+
+                        <p class="firm__details--paragraph">
+                            Our suit rental service offers high-quality, styllish suits for all occasions with expert tailoring and a hassle-free rental process. Enjor flexible rental periods, online reservations, and timely delivery to ensure you look your best effortlessly.
+                        </p>
+
+                        <p class="firm__details--phone-number">
+                            (555) 123-4567
+                        </p>
+
+                        <p class="firm__details--website">
+                            www.thesuitco@gmail.com
+                        </p>
+
+                        <div class="firm__details--adress">
+                            <img src="./icons/location.svg" alt="location">
+
+                            <p>
+                                Goma, Drc
+                            </p>
+                        </div>
+
+                        <img src="./icons/star.svg" alt="" class="stars">
+
+                        <button class="btn--view-profil">
+                            View profil
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-footer">
+        <div class="social-media__links">
+            <p class="social-media__links--text paragraph">
+                Follow us! We are present on:
+
+            <ul class="social-media__links--icons">
+                <li class="icon">
+                    <img src="./icons/twitter.svg" alt="twitter logo">
+                </li>
+
+                <li class="icon">
+                    <img src="./icons/linkedIn.svg" alt="linkedIn logo">
+                </li>
+
+                <li class="icon">
+                    <img src="./icons/meta.svg" alt="meta logo">
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="section-footer__grid">
+            <ul class="section-footer__grid--discover">
+                <h4 class="heading-footer">
+                    Discover
+                </h4>
+
+                <li class="section-footer__grid--discover-links">
+                    <a href="#" class="link">
+                        Become a service provider
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--discover-links">
+                    <a href="#" class="link">
+                        Services by city
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--discover-links">
+                    <a href="#" class="link">
+                        All the services
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--discover-links">
+                    <a href="#" class="link">
+                        Help and contacts
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="section-footer__grid--company">
+                <h4 class="heading-footer">
+                    The company
+                </h4>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Who are we?
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Blog
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Terms and conditions & confidentiality
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Platform information
+                    </a>
+                </li>
+
+                <li class="section-footer__grid--company-links">
+                    <a href="#" class="link">
+                        Mentions legal
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="section-footer__grid--download">
+                <h4 class="heading-footer">
+                    Download our app
+                </h4>
+
+                <li class="section-footer__grid--download-text">
+                    Free yourself from the small tasks of daily life wherever you are with our app.
+                </li>
+
+                <a href="#" class="section-footer__grid--download-links">
+                    <li class="app__link">
+                        <img src="./icons/apple.svg" alt="Apple logo" class="app__link--logo">
+
+                        <p class="app__link--text">
+                            Download in
+
+                            <span>
+                                Apple store
+                            </span>
+                        </p>
+                    </li>
+                </a>
+
+                <a href="#" class="section-footer__grid--download-links">
+                    <li href="#" class="app__link">
+                        <img src="./icons/playStore.svg" alt="Apple logo" class="app__link--logo">
+
+                        <p class="app__link--text">
+                            Download in
+
+                            <span>
+                                Google play
+                            </span>
+                        </p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Link to external js files -->
+    <script src="./js/sticky-nav.js"></script>
+</body>
+
+</html>

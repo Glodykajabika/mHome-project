@@ -200,3 +200,21 @@
         background: $color-primary;
     }
 }
+
+.btn--view-profil {
+    border: none;
+    color: $color-white;
+    background-color: $color-primary-dark-3;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+    background-color: $color-primary-dark-2;
+    }
+}
