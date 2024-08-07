@@ -1,0 +1,13 @@
+.left-sidebar {
+    display: block;
+    // position: fixed;
+    // left: 0;
+    // top: 0;
+    height: 100vh;
+    text-align: center;
+    // justify-content: center;
+    align-content: center;
+    flex: 1 .05 25rem;
+    margin: auto 0;
+    box-shadow: .5rem 0 .5rem 0 rgba($color: $color-black, $alpha: 0.2);
+}
